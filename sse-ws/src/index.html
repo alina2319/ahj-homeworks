@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="main-form">
+    <h2>Example</h2>
+    <div class="main-zone">
+      <div id="disp-user" class="disp-user nodisp"></div>
+      <div class="mz-table">
+        <div id="mz_tbody" class="mz_tbody nodisp"></div>
+
+        <div id="chat-template" class="chat-template nodisp">
+          <div class="popup-main">
+            <!-- <div class="popup-header">Введите сообщение</div> -->
+            <table class="login-form-tab">
+              <tbody>
+                <tr>
+                  <td class="edit-form-cell"><label for="name2">Введите сообщение:</label></td>
+                  <td class="edit-form-cell"><textarea id="chat_fld_name" name="name2" cols=50 rows=4 value=""></textarea></td>
+                  </tr>
+                <tr>
+                  <td><button id="chat-clear">Очистить чат</button></td>
+                  <td><button id="chat-submitbutton" type="submit">Отправить сообщение</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="login-popup-template" class="login-popup-template nodisp">
+    <div class="popup-main">
+      <div class="popup-header">Войдите в чат</div>
+      <table class="login-form-tab">
+        <tbody>
+          <tr>
+            <td class="edit-form-cell"><label for="name">Выберите псевдоним:</label></td>
+            <td class="edit-form-cell"><input id="popup_fld_name" name="name" type="text" size=50 value=""></td>
+          </tr>
+          <tr>
+            <td class="edit-form-buttons" colspan="2">
+              <button class="popup-button" id="popup-loginbutton" type="submit">Продолжить</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

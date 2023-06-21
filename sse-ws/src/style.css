@@ -1,0 +1,115 @@
+body {
+    background: #eee;
+    /* text-align: center; */
+    width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  
+  .nodisp {
+    display: none;
+  }
+  
+  .login-form-tab {
+    margin-top: 20px;
+  }
+  
+  .login-form-tab, .login-form-tab th, .login-form-tab td {
+    padding: 0.5rem 1rem;
+    border-collapse: collapse;
+    /* border: 1px solid #bbb; */
+    text-align: left;
+  }
+  
+  .redcell {
+    padding: 0.5rem 1rem;
+    border-collapse: collapse;
+    border: 1px solid #bbb;
+    text-align: left;
+    color: red;
+  }
+  
+  .main-form {
+    display: block;
+  }
+  
+  .main-popup-nodisp {
+    display: none;
+  }
+  
+  .disp-user {
+    /* border-radius: 20px; */
+    align-self: flex-start;
+    border: 1px solid #47454b;
+    max-height: 200px;
+    padding: 10px 30px 10px 0;
+    /* overflow: scroll; */
+  }
+  
+  .mz_tbody {
+    align-self: flex-start;
+    width: 600px;
+    margin: 0 auto 0 1rem;
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    /* border-radius: 20px; */
+    border: 1px solid #47454b;
+    overflow: scroll;
+  }
+  
+  .mz_tbody .showLeft {
+    align-self: flex-start;
+    text-align: left;
+    width: 75%;
+    margin: 10px auto;
+  }
+  .mz_tbody .showRight {
+    align-self: flex-end;
+    text-align: right;
+    width: 75%;
+    margin: 10px auto;
+  }
+  
+  /* .showLeft .showUser {
+    color: rgb(117, 47, 6);
+  } */
+  
+  .showRight .showUser {
+    color: rgb(117, 47, 6);
+  }
+  .login-popup-template {
+    border-radius: 20px;
+    border: 1px solid #47454b;
+    background-color: rgba(230, 230, 230, 1);
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    z-index: 999;
+  }
+  
+  .popup-header {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    font-size: 1.1em;
+  }
+  
+  .popup-main {
+    display: block;
+    position: relative;
+  }
+  
+  .popup-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 45%;
+    margin-right: auto;
+  }
+  
+  .main-zone {
+    display: flex;
+    flex-direction: row;
+  }
