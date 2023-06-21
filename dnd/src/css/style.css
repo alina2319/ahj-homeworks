@@ -1,0 +1,106 @@
+body {
+    background: #eee;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .MainFolder {
+    display: flex;
+  }
+  
+  .Subfolder {
+    position: relative;
+    width: 30%;
+    min-height: 40rem;
+    border-collapse: collapse;
+    border-radius: 3px;
+    border: solid 1px #000;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    /* color: white; */
+    text-align: left;
+  }
+  
+  .Subfolder-Header {
+    background-color: gray;
+    height: 2rem;
+    margin: 0;
+    padding: 0.5rem 0 0 0.5rem;
+  }
+  
+  .Subfolder-Item {
+    margin: 0;
+    padding: 0.5rem 0 0 0.5rem;
+    border: solid 1px #000;
+    border-collapse: collapse;
+    cursor: inherit;
+    z-index: 1;
+  }
+  
+  .Subfolder-Item.dragged {
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999;
+    pointer-events: auto;
+    background: #fff;
+  }
+  
+  .Item-Content {
+    z-index: -1;
+  }
+  
+  .Subfolder-Add-Control {
+    position: absolute;
+    font-size: 1.1em;
+    bottom: 1rem;
+    left: 0.5rem;
+  }
+  
+  .invisible {
+    display: none;
+  }
+  
+  .Item_Enter_Form {
+    position: absolute;
+    bottom: 4rem;
+    left: 0.5rem;  
+  }
+  
+  .Form_Data_Title {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 2rem;
+  }
+  
+  .Form_Data_Button {
+    background-color: green;
+  }
+  
+  .errormsg {
+    color: #f00;
+  }
+  .successmsg {
+    color: #0c0;
+  }
+  
+  .delete-box {
+    background-image: url("../img/delete_sign-512.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    background-position: center;
+    background-color: gray;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    /* top: 0.5rem; */
+    right: 0.5rem;
+    z-index: 999;
+  }
+  
+  
