@@ -1,0 +1,14 @@
+Following images is a copyright of following:
+
+image             copyright
+----------------  -----------------------------------------
+amex.jpg          American Express Company
+diners-club.jpg   Diners Club International
+discover.jpg      Discover Financial Services
+JCB.jpg           JCB Co., Ltd.
+Logo_UEK.png      ФУО ОАО «Универсальная электронная карта»
+maestro.png       Mastercard Incorporated
+mastercard.jpg    Mastercard Incorporated
+mirnps.jpg        Платёжная система «Мир»
+unionpay.jpg      China UnionPay
+Visa.png          Visa Inc.

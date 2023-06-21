@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Проверка карты</h1>
+  <div id="entercardTyp" class="cardtypeinfo"></div>
+  <div id="logo-group" class="logo-group">
+    <div class="sn-icon sn-mir"></div>
+    <div class="sn-icon sn-visa"></div>
+    <div class="sn-icon sn-mastercard"></div>
+    <div class="sn-icon sn-maestro"></div>
+    <div class="sn-icon sn-jsb"></div>
+    <div class="sn-icon sn-unionpay"></div>
+    <div class="sn-icon sn-amex"></div>
+    <div class="sn-icon sn-dinersclub"></div>
+    <div class="sn-icon sn-discover"></div>
+    <div class="sn-icon sn-uek"></div>
+  </div>
+  <form id="enterform" class = "enterform">
+    <label for="entercard">Номер карты:</label>
+    <input id="entercard" name = "entercard" type = "text" size = 30 value = "">
+    <button id="enterbutton">Проверка</button>
+    <div id="entercardState" class = "invisible"></div>
+  </form>
+  <a href='licenses.txt'>Лицензии</a>
+<script src="js/app.js"></script>
+ </body>
+</html>
