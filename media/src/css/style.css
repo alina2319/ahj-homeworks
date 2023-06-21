@@ -1,0 +1,73 @@
+body {
+    background: #eee;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  
+  .msg-log-container {
+    margin: 10px auto;
+    max-height: 800px;
+    padding: 0;
+  }
+  
+  .scrollable {
+    overflow: scroll;
+  }
+  
+  .scrollable > {
+    width: 98%;
+  }
+  
+  .msg-template {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border: 1px solid #bbb;
+  }
+  
+  .msg-datetime {
+    align-self: flex-end;
+    width: 15%;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .msg-text {
+    align-self: flex-start;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .msg-geo {
+    align-self: flex-start;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .nodisp {
+    display: none;
+  }
+  
+  .msg-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    border-radius: 10px;
+    border-collapse: collapse;
+    border: 1px solid #bbb;
+  }
+  
+  .msg-form * {
+    align-self: center;
+    margin: 10px;
+  }

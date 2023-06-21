@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="main-form">
+    <h2>Example</h2>
+    <div id="msg-log-container" class="msg-log-container"></div>
+  </div>
+
+  <div id="msg-template" class="msg-template nodisp">
+    <div class="msg-datetime">2021-03-02 23:15</div>
+    <div class="msg-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum.</div>
+    <div class="msg-geo">[55.667036, 37.590282]</div>
+  </div>
+
+  <form id="msg-form" class="msg-form">
+    <label for="entermsg">Name:</label>
+    <textarea class="msg-form-textarea" name = "entermsg" cols = 65></textarea>
+    <button class="msg-form-text-button">Ввести сообщение</button>
+  </form>
+
+  <script src="js/app.js"></script>
+ </body>
+</html>
