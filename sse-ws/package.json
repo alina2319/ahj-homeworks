@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MKSInc/AHJ-hw.-8-SSE-WS.-1-Chat-Frontend.git"
+    "url": "git+https://https://github.com/alina2319/ahj-homeworks/tree/video/sse-ws"
   },
-  "author": "Maksim <pyshkov.maksim@gmail.com>",
+  "author": "Alina Sergeeva <alin.k4@yandex.ru>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MKSInc/AHJ-hw.-8-SSE-WS.-1-Chat-Frontend/issues"
+    "url": "https:/https://https://github.com/alina2319/ahj-homeworks/tree/video/sse-ws"
   },
-  "homepage": "https://github.com/MKSInc/AHJ-hw.-8-SSE-WS.-1-Chat-Frontend#readme",
+  "homepage": "https://https://https://github.com/alina2319/ahj-homeworks/tree/video/sse-ws",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",

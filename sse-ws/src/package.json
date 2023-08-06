@@ -11,10 +11,10 @@
       "e2e": "jest --testPathPattern=./e2e/"
     },
     "repository": {
-      "url": "https://github.com/anikolaevski/ahj_10_http2.git",
+      "url": "https:/https://https://github.com/alina2319/ahj-homeworks/tree/video/sse-ws",
       "type": "git"
     },
-    "author": "Alexey Nikolaevskiy <anikolaevski@gmail.com>",
+    "author": "Alina Sergeeva <alin.k4@yandex.ru>",
     "license": "MIT",
     "devDependencies": {
       "@babel/cli": "^7.12.10",
