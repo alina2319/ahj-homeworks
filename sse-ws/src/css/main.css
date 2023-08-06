@@ -1,0 +1,71 @@
+:root {
+  --main-br: 20px; /* border-radius */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scrollbar on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: var(--main-br);
+  border: 2px solid #d3d3d3;
+}
+
+.wrapp-for-firefox::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a;
+  border: 2px solid #1a1a1a;
+}
+/* ------------------------------------- */
+
+/* Scrollbar on Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: thin;     /* Firefox */
+  scrollbar-color: #d3d3d3 rgba(0, 0, 0, 0);
+}
+
+.wrapp-for-firefox {
+  scrollbar-color: #1a1a1a rgba(0, 0, 0, 0);
+}
+/* -------------------- */
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+h2 span {
+  font-size: 80%;
+  font-style: italic;
+  color: slateblue;
+}
+
+.container {
+  padding: 10px;
+}
