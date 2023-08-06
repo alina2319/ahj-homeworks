@@ -1,106 +1,154 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: #eee;
-    text-align: center;
-    width: 1000px;
-    margin: 0 auto;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .MainFolder {
-    display: flex;
-  }
-  
-  .Subfolder {
-    position: relative;
-    width: 30%;
-    min-height: 40rem;
-    border-collapse: collapse;
-    border-radius: 3px;
-    border: solid 1px #000;
-    display: flex;
-    flex-direction: column;
-    font-size: 0.8em;
-    /* color: white; */
-    text-align: left;
-  }
-  
-  .Subfolder-Header {
-    background-color: gray;
-    height: 2rem;
-    margin: 0;
-    padding: 0.5rem 0 0 0.5rem;
-  }
-  
-  .Subfolder-Item {
-    margin: 0;
-    padding: 0.5rem 0 0 0.5rem;
-    border: solid 1px #000;
-    border-collapse: collapse;
-    cursor: inherit;
-    z-index: 1;
-  }
-  
-  .Subfolder-Item.dragged {
-    border-radius: 10px;
-    position: absolute;
-    z-index: 999;
-    pointer-events: auto;
-    background: #fff;
-  }
-  
-  .Item-Content {
-    z-index: -1;
-  }
-  
-  .Subfolder-Add-Control {
-    position: absolute;
-    font-size: 1.1em;
-    bottom: 1rem;
-    left: 0.5rem;
-  }
-  
-  .invisible {
-    display: none;
-  }
-  
-  .Item_Enter_Form {
-    position: absolute;
-    bottom: 4rem;
-    left: 0.5rem;  
-  }
-  
-  .Form_Data_Title {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    min-height: 2rem;
-  }
-  
-  .Form_Data_Button {
-    background-color: green;
-  }
-  
-  .errormsg {
-    color: #f00;
-  }
-  .successmsg {
-    color: #0c0;
-  }
-  
-  .delete-box {
-    background-image: url("../img/delete_sign-512.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-sizing: border-box;
-    background-position: center;
-    background-color: gray;
-    width: 1.5rem;
-    height: 1.5rem;
-    position: absolute;
-    /* top: 0.5rem; */
-    right: 0.5rem;
-    z-index: 999;
-  }
-  
-  
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+  background: #908f8c;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  font-size: medium;
+  margin: 0px auto;
+}
+
+.board {
+  width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.column {
+  width: 300px;
+  background-color: #ffffffa2;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.column:nth-child(2n) {
+  margin: 0px 50px;
+}
+
+.column__header {
+  text-transform: uppercase;
+}
+
+.tasks-list {
+  min-height: 50px;
+  padding: 20px;
+}
+
+.task {
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px 0 #0000003d;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.dragged {
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px 0 #0000003d;
+  cursor: grabbing;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 999;
+  opacity: 50%;
+  transform: rotate(10deg);
+}
+
+.column__add {
+  cursor: pointer;
+  align-items: center;
+}
+
+.add-form__textarea {
+  resize: vertical;
+  width: 276px;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px 0 #0000003d;
+}
+
+.add-form__form-control {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.add-form__button {
+  display: block;
+  width: 100px;
+  height: 40px;
+  font-size: medium;
+  padding: 0px, 10px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.add-form__submit-button {
+  background-color: #18d43de1;
+}
+
+.add-form__close-button {
+  background-color: #db7f6ae1;
+}
+
+.error-empty {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #db7f6ae1;
+}
+
+.close {
+  position: absolute;
+  z-index: 9999;
+  display: block;
+  border-radius: 5px;
+  width: 17px;
+  height: 17px;
+  background-color: #ececec9b;
+  color: #353738;
+  cursor: pointer;
+}
+
+.close::after {
+  content: '✕';
+}
+
+.task-list__new-place {
+  background-color: #6cbc8b;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.add-form__textarea {
+  font-size: large;
+}
