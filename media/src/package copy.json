@@ -11,10 +11,10 @@
       "e2e": "jest --testPathPattern=./e2e/"
     },
     "repository": {
-      "url": "https://github.com/anikolaevski/ahj-5-testing1.git",
+      "url": "https://github.com/https://github.com/alina2319/ahj-homeworks/tree/video/media",
       "type": "git"
     },
-    "author": "Alexey Nikolaevskiy <anikolaevski@gmail.com>",
+    "author": "Alina Sergeeva <alin.4@yandex.ru>",
     "license": "MIT",
     "devDependencies": {
       "@babel/cli": "^7.8.4",

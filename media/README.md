@@ -1,5 +1,7 @@
 # Домашнее задание к занятию "10. Geolocation, Notification, Media"
 
+**CI** [![Build status](https://ci.appveyor.com/api/projects/status/amccc7fjhb934653?svg=true)](https://ci.appveyor.com/project/kievsan/ahj-media)    [GitHub Pages](https://kievsan.github.io/ahj-media/)
+
 **Важно**: в рамках этого задания вы будете разрабатывать **один проект**, в который добавляется новая функциональность. Поэтому все три задачи нужно делать в одном репозитории (не забудьте опубликовать проект на GitHub Pages).
 
 Правила сдачи задания:

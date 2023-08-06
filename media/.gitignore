@@ -1,6 +1,7 @@
-dist/
+dist
 doc
-trashcan/
+.vscode
+.idea
 
 # Logs
 logs
