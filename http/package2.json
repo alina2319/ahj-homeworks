@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kievsan/ahj-http.git"
+    "url": "git+https://https://github.com/alina2319/ahj-homeworks/tree/video/http"
   },
   "author": "kievsan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kievsan/ahj-http"
+    "url": "https://https://github.com/alina2319/ahj-homeworks/tree/video/http"
   },
-  "homepage": "https://github.com/kievsan/ahj-http#readme",
+  "homepage": "https://https://github.com/alina2319/ahj-homeworks/tree/video/http",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.2",
