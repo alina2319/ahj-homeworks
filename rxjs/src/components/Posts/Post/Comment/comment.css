@@ -1,0 +1,53 @@
+.comments-post__header {
+	margin-bottom: 10px;
+}
+
+.comments-post__list {
+	margin-bottom: 30px;
+}
+
+.list-comments-post__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.comment {
+	display: flex;
+}
+
+.comment__avatar {
+	flex: 0 0 35px;
+	height: 35px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 15px;
+}
+
+.comment__top {
+	display: flex;
+	justify-content: space-between;
+}
+
+.comment__author {
+	font-weight: bold;
+	margin-bottom: 3px;
+	margin-right: 10px;
+}
+
+.comment__date {
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.comments-post__control {
+	text-align: center;
+}
+
+.comments-post__btn {
+	font-size: 14px;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.comments-post__btn:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	/* background-color: #767676; */
+	padding-top: 20px;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 1.3em;
+	margin-bottom: 30px;
+}
+
+h2 span {
+	font-size: 80%;
+	font-style: italic;
+	color: slateblue;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button {
+	border: none;
+	font-size: inherit;
+	cursor: pointer;
+}
+
+img {
+	vertical-align: top;
+}
+
+/* Технические классы ------------------------------------------------------------------ */
+
+._container {
+	max-width: 1000px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+._ibg {
+	position: relative;
+}
+
+._ibg img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* ------------------------------------------------------------------------------------- */

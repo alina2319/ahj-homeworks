@@ -1,0 +1,26 @@
+.posts {
+	max-width: 600px;
+
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.posts__control {
+	margin-bottom: 20px;
+}
+
+.posts__btn-refresh {
+	border-radius: 10px;
+	background-color: seagreen;
+	color: white;
+
+	padding: 8px 20px;
+}
+
+.posts__btn-refresh:hover {
+	background-color: #2e7d49;
+}
+
+.list-posts__item:not(:last-child) {
+	margin-bottom: 20px;
+}
