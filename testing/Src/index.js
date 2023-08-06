@@ -1,6 +1,5 @@
-import './css/style.css';
-import './js/app';
-import './licenses.txt';
+import "./css/style.css";
 
-// entry point for webpack
-// don't write your code here
+import "./js/app";
+
+// TODO: write your code in app.js
