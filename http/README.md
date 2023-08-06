@@ -1,5 +1,7 @@
 # Домашнее задание к занятию "7. Работа с HTTP"
 
+**CI** [![Build status](https://ci.appveyor.com/api/projects/status/vkodxh60av42kxjq?svg=true)](https://ci.appveyor.com/project/kievsan/ahj-http)
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ нужно использовать npm (а значит, никакого `yarn.lock` в репозитории быть не должно)
