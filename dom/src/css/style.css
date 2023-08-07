@@ -1,0 +1,36 @@
+.grid-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.grid-row {
+  margin-bottom: 10px;
+}
+
+.grid-row:last-child {
+  margin-bottom: 0;
+}
+
+.grid-row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.grid-cell {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 3px;
+  background: #8687ad;
+}
+
+.grid-cell:last-child {
+  margin-right: 0;
+}
+
+img {
+  padding: 15px 15px;
+}

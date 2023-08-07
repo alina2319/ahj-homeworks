@@ -1,5 +1,8 @@
 # Домашнее задание к занятию "2. DOM"
 
+**CI** [![Build status](https://ci.appveyor.com/api/projects/status/xkidh2i33sqcurdk?svg=true)](https://ci.appveyor.com/project/kievsan/ahj-dom-game)    [GitHub Pages](https://kievsan.github.io/ahj-dom-game/)
+
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
