@@ -1,16 +1,13 @@
 {
-  "name": "ahj-http",
+  "name": "webpack5",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "license": "ISC",
-  "test": {
-    "testEnvironment": "node",
-    "testTimeout": 35000
-  },
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint . --fix",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "test": "jest --testPathPattern=./src/ --passWithNoTests --detectOpenHandles",
     "testcover": "jestjest --testPathPattern=./src/ --passWithNoTests --coverage",
     "doc": "jsdoc -c jsdoc.conf.json",
@@ -19,15 +16,8 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://https://github.com/alina2319/ahj-homeworks/tree/video/http"
-  },
-  "bugs": {
-    "url": "https://github.com/alina2319/ahj-homeworks/tree/video/http"
-  },
-  "author": "alina",
-  "homepage": "https://github.com/alina2319/ahj-homeworks/tree/video/http",
+  "author": "kievsan",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.2",
@@ -45,6 +35,8 @@
     "jest": "^29.3.1",
     "live-server": "^1.2.2",
     "prettier": "2.7.1",
+    "puppeteer": "^19.8.5",
+    "puppeteer-core": "^19.8.5",
     "resolve-url-loader": "^5.0.0",
     "terser-webpack-plugin": "^5.3.7",
     "url-loader": "^4.1.1",
@@ -62,11 +54,9 @@
     "jest-each": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "mini-css-extract-plugin": "^2.7.5",
-    "puppeteer": "^19.8.5",
-    "puppeteer-core": "^19.8.5",
     "push-dir": "^0.4.1",
     "request": "^2.9.0",
     "typescript": "^5.0.4",
-    "uuid": "^8.3.0"
+    "uuid": "7.0.0"
   }
 }
