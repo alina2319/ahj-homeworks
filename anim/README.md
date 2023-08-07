@@ -1,5 +1,7 @@
 # Домашнее задание к занятию "9. Анимации и CSS"
 
+**CI** [![Build status](https://ci.appveyor.com/api/projects/status/ep5djyjwbfvvbf64?svg=true)](https://ci.appveyor.com/project/kievsan/ahj-animation)    [GitHub Pages](https://kievsan.github.io/ahj-animation/)
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
