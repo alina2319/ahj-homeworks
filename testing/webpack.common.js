@@ -2,29 +2,27 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = {
-  devtool: 'source-map',
-  target: 'web',
+// Хеширование файлов только в production mode
+function addHash(fileName, buildMode, hash = 'contenthash') {
+  return buildMode === 'production' ? fileName.replace(/\.[^.]+$/, `.[${hash}]$&`) : fileName;
+}
+
+module.exports = (buildMode) => ({
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '',
+    filename: addHash('[name].js', buildMode),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: ['babel-loader'],
       },
       {
         test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
+        use: ['html-loader'],
       },
       {
         test: /\.css$/,
@@ -33,8 +31,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+          },
+        ],
       },
     ],
   },
@@ -44,8 +46,8 @@ module.exports = {
       filename: './index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
+      filename: addHash('[name].css', buildMode),
+      chunkFilename: addHash('[id].css', buildMode),
     }),
   ],
-};
+});
